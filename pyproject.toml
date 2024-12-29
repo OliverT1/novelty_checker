@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "novelty-checker"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "exa-py>=1.7.1",
+    "fastapi>=0.115.6",
+    "litellm>=1.55.12",
+    "pandas>=2.2.3",
+    "pydantic-settings>=2.7.0",
+    "pydantic>=2.10.4",
+    "python-dotenv>=1.0.1",
+    "uvicorn>=0.34.0",
+    "click>=8.1.8",
+    "rich>=13.9.4",
+    "ipykernel>=6.29.5",
+    "requests>=2.32.3",
+    "bs4>=0.0.2",
+    "selenium>=4.27.1",
+    "seaborn>=0.13.2",
+    "braintrust>=0.0.177",
+    "scikit-learn>=1.6.0",
+]
+
+[project.scripts]
+novelty-check = "backend.cli:main"
